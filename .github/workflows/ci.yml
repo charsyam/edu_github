@@ -24,7 +24,7 @@ jobs: # actoion이 시작될 경우 진행될 과정
           pip install -r requirements.txt
       - name: pylint
         run: |
-          pylint src
-          pylint tests
+          PYTHONPATH=src pylint src
+          PYTHONPATH=src pylint tests
       - name: Run tests with pytest
-        run: pytest tests
+        run: PYTHONPATH=src pytest tests
