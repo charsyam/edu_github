@@ -1,6 +1,6 @@
 import pytest
 
-from src.add import add
+from add import add
 
 
 def test_add_true():

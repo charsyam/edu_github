@@ -1,6 +1,6 @@
 import pytest
 
-from src.add import minus
+from add import minus
 
 
 def test_minus_true():
